@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>memberForm.html</title>
+<title>memberEdit.html</title>
 
 <style type="text/css">
 	table, th, td {
@@ -28,6 +28,11 @@ th, td	{
 
 
 <body>
+
+<form action="" method="post" id="form" name="form" enctype="multipart/form-bata">
+
+	<h1 align="center">회원정보수정</h1>
+		
 		<table border="1" align="center"  >
 			
 			
@@ -36,28 +41,49 @@ th, td	{
 			
 			
 			
-			<h1 align="center">회원가입</h1>
-		<form action="" method="post" id="form" name="form" enctype="multipart/form-bata">
-		
 		<tr>
+			<td ><img src="./lilipa.jpg" width="128px" height="72px"></td>
 			<th>이름</th>
-		<td aling="center"><input type="text" id="name" name="name" autofocus="autofocus" placeholder="이름을 입력하세요."></td>
+		<td align="center" colspan="2"><input type="text" id="name" name="name" autofocus="autofocus" value="최성준"></td>
 		
+		</tr>
 
-		</tr>
-		<tr>
-			<th>주민번호등록번호</th>
-			<td aling="center"><input tpye="text" id="ssn" name="ssn" maxlength="7"> - <input type="password" id="ssn2" nampe="ss2" maxlength="7"> </td>
 		
-		</tr>
+	
 		<tr>
 			<th>성별</th>
-			<td align="center"><input type="radio" id="" name="gender">남성
+			<td align="center"><input type="radio" id="" name="gender" checked>남성
 	 		 <input type="radio" id="" name="gender">여성</td>
-		
-		
+			 
+			<th>생년월일</th>
+		    <td align="center"> <input type="date" id="" name="" value="1996-03-21"> </td>    
 		
 		</tr>
+		<tr>
+		
+		
+		
+		 <th>국적</th>
+			<td colspan="3" align="center">
+			<select>
+                        <option>대한민국</option>
+						<option>미국</option>
+						<option>일본</option>
+						<option>중국</option>
+						<option>영국</option>
+
+
+
+				</select>
+			</td>
+			<tr>
+			<th>주소</th>
+			<td colspan="3"><input type="text" id="" name="" size="100" value="인천 남동구 간석동"></td>
+			</tr>
+		
+		
+			
+		
 		
 		
 		
@@ -65,86 +91,187 @@ th, td	{
 		<tr>		
 			
 			<th>아이디</th>
-			<td><input type="text" id="id" name="id" maxlength="20" size="30" placeholder="아이디를 입력하세요."><input type="button" value="ID중복확인" onclick="here();">	
+			<td><input type="text" id="id" name="id" maxlength="20" size="30" value="glgltjdwns">	
 
 			</td>
 			
-				
-			
-			
-		
-		</tr>
-		<tr>
 			<th>비밀번호</th>
-			<td><input type="password" id="password" name="password" maxlength="20" size="30"></td>
+			<td><input type="password" id="password" name="password" maxlength="20" size="30" value="********"></td>	
+			
+			
 		
 		</tr>
+		 
 		
-		<tr>
-			<th>비밀번호 재확인</th>
-			<td><input type="password" id="password" name="password" maxlength="20" size="30"></td>
 		
-		</tr>
 		 <tr>
 		 <th>이메일</th>
-		 <td><input type="txet" id="email" name="email">@<input type="text" id="email2" name="email2"></td> 
-		 
-		 </tr>
-		<tr>
-			<th>이메일 수신 동의</th>
+		 <td><input type="text" id="email" name="email" value="glgltjdwns">@<input type="text" id="email2" name="email2" value="naver.com"></td> 
+		 <th>이메일 수신 동의</th>
 			<td align="center"><input type="radio" id="" name="radio" value="y">동의 		
-			    <input type="radio" id="" name="radio" value="n">비동의</td>
+			    <input type="radio" id="" name="radio" value="n" checked>비동의</td>
+		 </tr>
 		
-		
-		</tr>
 		<tr>
 			<th>모바일</th>
-			<td><input tyep="text" id="" name=""></td>
+			<td><input type="text" id="" name="" value="010-4039-2852"></td>
 			
+			<th>모바일 수신 동의</th>
+				<td align="center"><input type="radio" id="" name="1" value="y">동의 		
+			    <input type="radio" id="" name="1" value="n" checked>비동의</td>
 		
 		
 		</tr>
 			<tr>
-				<th>모바일 수신 동의</th>
-				<td align="center"><input type="radio" id="" name="radio" value="y">동의 		
-			    <input type="radio" id="" name="radio" value="n">비동의</td>
+				<th>전화번호</th>
+				<td><input type="text" id="" name="" value="032-428-2658"></td>
+				<th>팩스번호</th>
+				<td><input type="text" id="" name="" value="0505-428-2659"></td>
 			
 			
-			</tr>
-		
-		
-		
-		<tr>
-			<th>우편번호</th>
-			<td><input tyep="text" id="" name="" size="8" maxlength="10"><input type="button" value="우편번호검색" onclick="here();"></td>
-			
-		
-		
-		</tr>
-			<tr>
-			<th>주소</th>
-			<td><input type="text" id="" name="" size="50"></td>
-			</tr>
-			<tr>
-			<th>상세주소</th>
-			<td><input type="text" id="" name="" size="50"></td>
 			
 			</tr>
 			<tr>
-			<td	colspan="2" align="center">
-			<input type="submit" name="confirm" value="수 정">
+				<th>추천인</th>
+				<td colspan="3" align="center"><input type="text" id="" name="" value="리리파"></td>
+				 
+					
+			
+			</tr>
+			<tr>
+				<th>비밀번호 문제</th>
+				
+				<td><select>
+                        <option>태어난 고향은?</option>
+						<option>좋아하는 색은?</option>
+						<option>하고싶었던 직업은?</option>
+						
+
+
+				</select></td>
+			
+			
+			<th >비밀번호 답</th>
+				<td><input type="text" id="" name="" value="인천"></td>
+			
+			</tr>
+			<tr>
+				<th>sns</th>
+			<td><select>
+						<option>Facebook</option>			
+                        <option>Instagram</option>
+						
+
+
+				</select></td>
+				<th>홈페이지</th>			
+				<td><input type="text"	id="" name="" value="없음"></td>
+			</tr>
 
 			
-			<input type="button" value="취 소" onclick="here();">
+			<tr>
+				<th>직업(희망)</th>
+				<td colspan="3"	align="center"><input type="text" id="" name="" value="Android 앱 개발자"></td>
+			
+			
+			
+			</tr>
+			<tr>
+				<th>취미</th>			
+				<td colspan="3"><input type="text" id="" name="" size="80"  value="판타지소설,게임,낚시"></td>
+			
+			</tr>
+				<tr>
+					<th>결혼여부</th>
+					<td><input type="radio" id="" name="2" value="y">결혼
+						<input type="radio" id="" name="2" value="n"checked>비결혼
+					
+					</td>				
+						<th>결혼기념일</th>
+						<td align="center"><input type="date" id="" name=""></td>
+				
+				</tr>
+						<tr>
+							<th>자녀유무</th>
+							<td><input type="radio" id="" name="3" value="y">있음
+						        <input type="radio" id="" name="3" value="n"checked>없음</td>
+						
+							<th>좋아하는 색</th>
+							<td align="center"><input type="color" id="" name="color" value="#000000">&<input type="color" id="" name="color2" value="#FFFFFF"></td>
+						</tr>
+						
+						<tr>
+							<th>자기소개</th>
+							<td colspan="3"><textarea rows="" cols="100">안녕하세요 저는 인천사는 최성준입니다.</textarea></td>
+						
+						</tr>
+							<tr>
+				<th>개인정보 유효기간</th>
+				<td colspan="3"><select>
+                     	
+						<option>6년</option>
+						<option>4년</option>
+						<option>2년</option>
+						
+
+
+				</select></td>
+				
+				</tr>			
+			
+		
+			<tr>
+			<td	colspan="4" align="center">
+			<a href="./memberList.html"><input type="button" value="저 장" onclick="here();"></a>
+
+			
+			<a href="./memberList.html"><input type="button" value="취 소" onclick="here();"></a>
 			
 			</td>
 			
 			
 			</tr>
-		</form>
+		
+		
+		
+		
+		
+		
 
 		</table>
+	</table>
+		<br>
+		<table border="1" align="center">
+		<tr>
+			<th>번호</th>
+			<th>프로젝트 이름</th>
+			<th>기간</th>	
+			<th>프로젝트 내용</th>	
+			<th>발주처</th>	
+		</tr>
+			<tr>
+			<td>1번</td>
+			<td><input type="text" id="" name="" value="Android 앱 개발"></td>
+			<td><input type="month" id="" name="" value="2020-03">~<input type="month" id="" name="" value="2021-08"></td>
+			<td><input type="text" id="" name="" value="Android 앱 게임 개발"></td>
+			<td><input type="text" id="" name="" size="13"  value="(주)리리파 컴퍼니"></td>
+			</tr>
+			<tr>
+			<td>2번</td>
+			<td><input type="text" id="" name="" value="IOS 앱 개발"></td>
+			<td><input type="month" id="" name="" value="2021-09">~<input type="month" id="" name="" value="2022-09"></td>
+			<td><input type="text" id="" name="" value="IOS 앱 게임 개발"></td>
+			<td><input type="text" id="" name="" size="13" value="(주)리리파 컴퍼니"></td>
+			</tr>
+			
+			
+			
+		
+		
+		
+		
+		</table>
 
-
+</form>
 </body>
 </html>

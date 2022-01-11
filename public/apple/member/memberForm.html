@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="uTF-8">
@@ -28,6 +28,8 @@ th, td	{
 
 
 <body>
+	<h1 align="center">회원가입</h1>
+<form action="" method="post" id="form" name="form" enctype="multipart/form-bata">
 		<table border="1" align="center"  >
 			
 			
@@ -36,28 +38,54 @@ th, td	{
 			
 			
 			
-			<h1 align="center">회원가입</h1>
-		<form action="./memberView.html" method="post" id="form" name="form" enctype="multipart/form-bata">
+		
 		
 		<tr>
+			<th>이미지</th>
+			<td><input type="file" id="" name="" accept=".png,.pdf,.jpg"></td>		
 			<th>이름</th>
-		<td aling="center"><input type="text" id="name" name="name" autofocus="autofocus" placeholder="이름을 입력하세요."></td>
+		<td align="center"><input type="text" id="name" name="name"  placeholder="이름을 입력하세요."></td>
 		
+		</tr>
 
-		</tr>
-		<tr>
-			<th>주민번호등록번호</th>
-			<td aling="center"><input tpye="text" id="ssn" name="ssn" maxlength="7"> - <input type="password" id="ssn2" nampe="ss2" maxlength="7"> </td>
 		
-		</tr>
+	
 		<tr>
 			<th>성별</th>
 			<td align="center"><input type="radio" id="" name="gender">남성
 	 		 <input type="radio" id="" name="gender">여성</td>
-		
-		
+			 
+			<th>생년월일</th>
+		    <td align="center"> <input type="date" id="" name=""> </td>    
 		
 		</tr>
+		<tr>
+		
+		
+		
+		 <th>국적</th>
+			<td colspan="3" align="center">
+			<select>
+                        <option>대한민국</option>
+						<option>미국</option>
+						<option>일본</option>
+						<option>중국</option>
+						<option>영국</option>
+
+
+
+				</select>
+			</td>
+			<tr>
+			<th>주소</th>
+			<td colspan="3"><input type="text" id="" name="" size="100"></td>
+			</tr>
+		
+		
+			
+		</tr>
+		
+		
 		
 		
 		
@@ -69,83 +97,178 @@ th, td	{
 
 			</td>
 			
-				
-			
-			
-		
-		</tr>
-		<tr>
 			<th>비밀번호</th>
-			<td><input type="password" id="password" name="password" maxlength="20" size="30"></td>
+			<td><input type="password" id="password" name="password" maxlength="20" size="30"></td>	
+			
+			
 		
 		</tr>
+		 
 		
-		<tr>
-			<th>비밀번호 재확인</th>
-			<td><input type="password" id="password" name="password" maxlength="20" size="30"></td>
 		
-		</tr>
 		 <tr>
 		 <th>이메일</th>
 		 <td><input type="text" id="email" name="email">@<input type="text" id="email2" name="email2"></td> 
-		 
-		 </tr>
-		<tr>
-			<th>이메일 수신 동의</th>
+		 <th>이메일 수신 동의</th>
 			<td align="center"><input type="radio" id="" name="radio" value="y">동의 		
 			    <input type="radio" id="" name="radio" value="n">비동의</td>
+		 </tr>
 		
-		
-		</tr>
 		<tr>
 			<th>모바일</th>
-			<td><input tyep="text" id="" name=""></td>
-			
+			<td><input type="text" id="" name=""><input type="button" value="인증번호 받기" onclick="here();"></td>
+			<th>모바일 수신 동의</th>
+				<td align="center"><input type="radio" id="" name="1" value="y">동의 		
+			    <input type="radio" id="" name="1" value="n">비동의</td>
 		
 		
 		</tr>
 			<tr>
-				<th>모바일 수신 동의</th>
-				<td align="center"><input type="radio" id="" name="radio" value="y">동의 		
-			    <input type="radio" id="" name="radio" value="n">비동의</td>
+				<th>전화번호</th>
+				<td><input type="text" id="" name=""></td>
+				<th>팩스번호</th>
+				<td><input type="text" id="" name=""></td>
 			
 			
 			</tr>
-		
-		
-		
-		<tr>
-			<th>우편번호</th>
-			<td><input tyep="text" id="" name="" size="8" maxlength="10"><input type="button" value="우편번호검색" onclick="here();"></td>
-			
-		
-		
-		</tr>
 			<tr>
-			<th>주소</th>
-			<td><input type="text" id="" name="" size="50"></td>
-			</tr>
-			<tr>
-			<th>상세주소</th>
-			<td><input type="text" id="" name="" size="50"></td>
+				<th>추천인</th>
+				<td colspan="3" align="center"><input type="text" id="" name=""></td>
+				
+					
 			
 			</tr>
 			<tr>
-			<td	colspan="2" align="center">
-			<input type="submit" name="confirm" value="등 록">
+				<th>비밀번호 문제</th>
+				
+				<td><select>
+                        <option>태어난 고향은?</option>
+						<option>좋아하는 색은?</option>
+						<option>하고싶었던 직업은?</option>
+						
 
-			<input type="reset" name="reset" value="다시입력">
+
+				</select></td>
 			
-			<input type="button" value="가입안함" onclick="here();">
+			
+			<th >비밀번호 답</th>
+				<td><input type="text" id="" name=""></td>
+			
+			</tr>
+			<tr>
+				<th>sns</th>
+			<td><select>
+						<option>Facebook</option>			
+                        <option>Instagram</option>
+						
+
+
+				</select></td>
+				<th>홈페이지</th>			
+				<td><input type="text"	id="" name=""></td>
+			</tr>
+		<tr>
+		
+			<tr>
+				<th>직업(희망)</th>
+				<td colspan="3"	align="center"><input type="text" id="" name=""></td>
+			
+			
+			
+			</tr>
+			<tr>
+				<th>취미</th>			
+				<td colspan="3"><input type="text" id="" name="" size="80" ></td>
+			
+			</tr>
+				<tr>
+					<th>결혼여부</th>
+					<td><input type="radio" id="" name="2" value="y">결혼
+						<input type="radio" id="" name="2" value="n">비결혼
+					
+					</td>				
+						<th>결혼기념일</th>
+						<td align="center"><input type="date" id="" name=""></td>
+				
+				</tr>
+						<tr>
+							<th>자녀유무</th>
+							<td><input type="radio" id="" name="3" value="y">있음
+						        <input type="radio" id="" name="3" value="n">없음</td>
+						
+							<th>좋아하는 색</th>
+							<td align="center"><input type="color" id="" name="color" value="#FFFFFF">&<input type="color" id="" name="color2" value="#000000"></td>
+						</tr>
+						
+						<tr>
+							<th>자기소개</th>
+							<td colspan="3"><textarea rows="" cols="100"></textarea></td>
+						
+						</tr>
+				<tr>
+				<th>개인정보 유효기간</th>
+				<td colspan="3"><select>
+                     	
+						<option>6년</option>
+						<option>4년</option>
+						<option>2년</option>
+						
+
+
+				</select></td>
+				
+				
+			
+			<tr>
+			<td	colspan="4" align="center">
+			<a href="./memberList.html"><input type="button" value="등 록" onclick="here();"></a>
+
+			
+			<a href="./memberList.html"><input type="button" value="취 소" onclick="here();"></a>
 			
 			</td>
 			
 			
-			</tr>
-		</form>
+		
+		
+		
+		
+		
+		
 
 		</table>
-
+		<br>
+		<table border="1" align="center">
+		<tr>
+			<th>번호</th>
+			<th>프로젝트 이름</th>
+			<th>기간</th>	
+			<th>프로젝트 내용</th>	
+			<th>발주처</th>	
+		</tr>
+			<tr>
+			<td>1번</td>
+			<td><input type="text" id="" name=""></td>
+			<td><input type="month" id="" name="">~<input type="month" id="" name=""></td>
+			<td><input type="text" id="" name=""></td>
+			<td><input type="text" id="" name="" size="4"></td>
+			</tr>
+			<tr>
+			<td>2번</td>
+			<td><input type="text" id="" name=""></td>
+			<td><input type="date" id="" name="">~<input type="date" id="" name=""></td>
+			<td><input type="text" id="" name=""></td>
+			<td><input type="text" id="" name="" size="4"></td>
+			</tr>
+			
+			
+			
+		
+		
+		
+		
+		</table>
+</form>
 
 </body>
 </html>
