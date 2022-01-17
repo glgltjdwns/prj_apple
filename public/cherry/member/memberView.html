@@ -13,7 +13,7 @@
 
 <body>
 
-	<table class="table  table-success table-striped  table-bordered border-Light">
+	<table class="table table-hover table-danger table-bordered border-Info">
 	
 		<tr>
 			<td colspan="1"><img src="./lilipa.jpg" width="128px" height="72px"></td>	
@@ -67,7 +67,7 @@
 		  <tr>
 		  	<th>이메일</th>
 		  	<td>glglgl@naver.com</td>
-		  	<th>이메일 마케팅 수신 동의</th>
+		  	<th >이메일 마케팅 수신 동의</th>
 		  	<td align="center">O</td>
 		  
 		  </tr>
@@ -127,14 +127,19 @@
 			
 
 		  </table>
-		<a href="./memberList.html"><input type="button" value="목 록" onclick="here();"></a>
-		<a href="./memberEdit.html"><input type="button" value="수 정" onclick="here();"></a>
-		<a href="./memberList.html"><input type="button" value="삭 제" onclick="here();"></a>
-		<hr>	
 
-		<table border="1">
+
+
+
+
+
+
+
+	
+
+		<table class="table table-hover table-danger table-bordered border-Info">
 		
-		<tr>
+		<tr class="table-active">
 		<th>번호</th>
 		<th>프로젝트 이름</th>
 		<th>기간</th>
@@ -160,8 +165,45 @@
 			
 		
 		</table>
+		<a href="./memberList.html"><button type="button" class="btn btn-info">목 록</button></a>
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">수 정</button></a>
+	<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">삭 제</button>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="exampleModalLabel"  >!경고!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-danger">
+        삭제하시겠습니까?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취 소</button>
+        <a href="./memberList.html"><button type="button" class="btn btn-danger">삭 제</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-success" id="exampleModalLabel2"  >!회원정보 수정!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-success">
+        수정하시겠습니까?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취 소</button>
+        <a href="./memberEdit.html"><button type="button" class="btn btn-success">수 정</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
