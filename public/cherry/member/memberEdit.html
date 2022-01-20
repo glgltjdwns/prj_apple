@@ -43,119 +43,123 @@
 		</tr>
 		<tr>
 			<th class="table-active" width="20%">성별</th>
-			<td width="30%"><input type="radio" class="btn-check"
-				name="options-outlined" id="primary-outlined" autocomplete="off"
-				checked> <label class="btn btn-outline-primary"
-				for="primary-outlined">남자</label> <input type="radio"
-				class="btn-check" name="options-outlined" id="danger-outlined"
-				autocomplete="off"> <label class="btn btn-outline-danger"
-				for="danger-outlined">여자</label> <input type="radio"
-				class="btn-check" name="options-outlined" id="success-outlined"
-				autocomplete="off"> <label class="btn btn-outline-success"
-				for="success-outlined">기타</label></td>
+			<td width="30%"><input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off" checked> 
+					<label class="btn btn-outline-primary"for="primary-outlined">남자</label> 
+					<input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off"> 
+					<label class="btn btn-outline-danger" for="danger-outlined">여자</label> 
+					<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"> 
+					<label class="btn btn-outline-success" for="success-outlined">기타</label>
+			</td>
 
 			<th class="table-active" width="20%">생년월일</th>
-			<td align="center" width="30%"><input type="date" id="" name=""
-				value="1996-03-21"></td>
+			<td align="center" width="30%"><input type="date" id="" name="" value="1996-03-21"></td>
 		</tr>
 		<tr>
 			<th class="table-active">국적</th>
-			<td colspan="3" align="center"><select>
+			<td colspan="3" align="center">
+				<select>
 					<option>대한민국</option>
 					<option>미국</option>
 					<option>일본</option>
 					<option>중국</option>
 					<option>영국</option>
-			</select></td>
+				</select>
+			</td>
 		<tr>
-			<!-- <th class="table-active">주소</th>
-			<td colspan="3"><input type="text" id="" name="" size="100"
-				value="인천 남동구 간석동"></td> -->
-<td>
-			<label for="button-addon1" class="form-label">주소</label>
-			<button class="btn btn-outline-secondary" type="button"
-				id="button-addon1" data-bs-toggle="modal"
-				data-bs-target="#exampleModal">주소 찾기</button>
-
-			<!--MODAL -->
-			<div class="modal fade" id="exampleModal" tabindex="-1"
-				aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal"
-								aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<h3 style="text-align: center">주소 검색</h3>
-							<br> <br>
-							<div class="input-group mb-3">
-								<input class="form-control form-control-lg" type="text"
-									placeholder="주소 입력"> <br> <a
-									href="https://map.naver.com/v5"
-									class="btn btn-outline-secondary" role="button"
-									id="button-addon2">검색</a>
+			<th class="table-active" >주소</th>
+			<td colspan="3">
+				<div class="col-sm-7">
+				    <label for="inputAddress" class="form-label"></label>
+				    <input type="text" class="form-control" id="inputAddress" value="서울 강서구">
+				</div>
+				  <div class="col-sm-7">
+				    <label for="inputAddress2" class="form-label"></label>
+				    <input type="text" class="form-control" id="inputAddress2" value="떙떙 빌라 203호"> 
+				  </div>
+						
+				
+				<!--MODAL -->
+				<label for="button-addon1" class="form-label"></label>
+				<button class="btn btn-outline-secondary" type="button"
+					id="button-addon1" data-bs-toggle="modal"
+					data-bs-target="#exampleModal">주소 찾기</button> <!--MODAL -->
+				<div class="modal fade" id="exampleModal" tabindex="-1"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
-							<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
-							<p>예) 건물명 : 방배동 우성아파트</p>
-							<p>도로명 : 테헤란로 152</p>
-							<p>지역번 : 역삼동 737</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary"
-								data-bs-dismiss="modal">닫기</button>
-							<button type="button" class="btn btn-primary">확인</button>
+							<div class="modal-body">
+								<h3 style="text-align: center">주소 검색</h3>
+								<br> <br>
+								<div class="input-group mb-3">
+									<input class="form-control form-control-lg" type="text"
+										placeholder="주소 입력"> <br> <a
+										href="https://map.naver.com/v5"
+										class="btn btn-outline-secondary" role="button"
+										id="button-addon2">검색</a>
+								</div>
+								<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+								<p>예) 건물명 : 방배동 우성아파트</p>
+								<p>도로명 : 테헤란로 152</p>
+								<p>지역번 : 역삼동 737</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">닫기</button>
+								<button type="button" class="btn btn-primary">확인</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<!-- MODAL END -->
-</td>
-
-
-
-
-
-
-
-
-		</tr>
-
-
-
-
-
-
-
-
+				</div> <!-- MODAL END -->
+				</td>
+		</tr>			
+	
 		<tr>
-
 			<th class="table-active">아이디</th>
-			<td><input type="text" id="id" name="id" maxlength="20"
-				size="30" value="glgltjdwns"></td>
+					<td>
+						<div class="row g-3 align-items-center">
+							<div class="col-auto">
+									<input type="text" id="exampleModalLabel1" class="form-control"	 maxlength="20" value="asdasd">
+							</div>
+							<div class="col-auto">
+									<span id="exampleModalLabel1" class="form-text"> Must be 8-20 characters long. </span>
+							</div>
+						</div>
+					</td>
+				
 
 			<th class="table-active">비밀번호</th>
-			<td><input type="password" id="password" name="password"
-				maxlength="20" size="30" value="********"></td>
-
-
-
+					<td>
+						<div class="row g-3 align-items-center">
+							<div class="col-auto">
+									<input type="password" id="inputPassword6" class="form-control"	aria-describedby="passwordHelpInline" maxlength="20" value="asdasdsad">
+							</div>
+							<div class="col-auto">
+									<span id="passwordHelpInline" class="form-text"> Must be 8-20 characters long. </span>
+							</div>
+						</div>
+					</td>
 		</tr>
-
-
-
 		<tr>
 			<th class="table-active">이메일</th>
-			<td><input type="text" id="email" name="email"
-				value="glgltjdwns">@<input type="text" id="email2"
-				name="email2" value="naver.com"></td>
+			<td>
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" value="asdasdsa"> 
+					<span class="input-group-text">@</span> 
+					<input type="text" class="form-control" value="naver.com">
+				</div>
+			</td>
+
 			<th class="table-active">이메일 수신 동의</th>
-			<td><div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch"
-						id="flexSwitchCheckDefault" checked> <label
-						class="form-check-label" for="flexSwitchCheckDefault"></label>
-				</div></td>
+			<td>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"> 
+						<label class="form-check-label" for="flexSwitchCheckDefault"></label>
+				</div>
+			</td>
 		</tr>
 
 		<tr>
@@ -188,10 +192,13 @@
 
 		</tr>
 		<tr>
-			<th class="table-active">추천인</th>
-			<td colspan="3" align="center"><input type="text" id="" name=""
-				value="리리파"></td>
-
+				<th class="table-active">추천인</th>
+				<td colspan="3" align="center">
+				<div class="w-25">
+					<input type="text" class="form-control" id="formGroupExampleInput" value="리리파">
+				</div>
+				
+				</td>
 
 
 		</tr>
@@ -209,8 +216,11 @@
 
 
 			<th class="table-active">비밀번호 답</th>
-			<td><input type="text" id="" name="" value="인천"></td>
-
+			<td>
+				<div class=" w-25">
+					<input type="text" class="form-control" id="formGroupExampleInput" value="인천" >
+				</div>
+			</td>
 		</tr>
 		<tr>
 			<th class="table-active">sns</th>
@@ -236,8 +246,32 @@
 		</tr>
 		<tr>
 			<th class="table-active">취미</th>
-			<td colspan="3"><input type="text" id="" name="" size="80"
-				value="판타지소설,게임,낚시"></td>
+			<td colspan="3">
+				<div class="form-check form-check-inline">
+					  	<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="게임" checked>
+					  	<label class="form-check-label" for="inlineCheckbox1">게임</label>
+				</div>
+				<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="독서" checked>
+	 					<label class="form-check-label" for="inlineCheckbox2">독서</label>
+				</div>
+				<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="등산">
+	 					<label class="form-check-label" for="inlineCheckbox3">등산</label>
+				</div>
+				<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="운동">
+	 					<label class="form-check-label" for="inlineCheckbox4">운동</label>
+				</div>
+				<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="낚시" checked>
+	 					<label class="form-check-label" for="inlineCheckbox5">낚시</label>
+				</div>
+				<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="기타">
+	 					<label class="form-check-label" for="inlineCheckbox6">기타</label>
+				</div>
+			</td>
 
 		</tr>
 		<tr>
