@@ -5,14 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>로그인 페이지</title>
 
-<Style type="text/css">
+<Style type="text/css">	
 		
-		
-		
-		.my-wrap {
-			width: 380px;
-			
-		}
+
+	body {
+	font-family: 'Noto San KR', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("../../../images/spring_images2.jpg") no-repeat center;  
+	background-size: cover;	
+	
+	}
+
 
 
 </style>
@@ -25,18 +31,18 @@
 
 <div class="container my-wrap">
 <br><br><br>
- <h2 align="center" class=""><img src="../../../images/lilipaimages.png" width="330px"></h2> 
+ <h2 align="center"><img src="../../../images/lilipaimages.png" width="330px"></h2> 
 <br>
 
 
-  <div class="modal-body  pt-0" id="login">
+  <div class="modal-body  pt-0" >
         <form>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="ID">
+            <input type="text" class="form-control rounded-4" id="ID" placeholder="ID">
             <label for="floatingInput">ID</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control rounded-4" id="Pw" placeholder="PW">
             <label for="floatingPassword">Password</label>
           </div>
           <div>
@@ -45,11 +51,10 @@
          </div>	 
 			<div class="form-check form-switch">
 			 	<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-  		  	<div class="col-md-4 form-check-label" >자동 로그인</div>
+  		  	<div class="col-md-4 form-check-label text-info">자동 로그인</div>
 	  	  <div>
 				<div >	
-					<a href="" class="link_look "data-clk="log_off.searchid" >아이디</a>
-					<a href="" class="link_look " data-clk="log_off.searchpass">비밀번호찾기</a>
+					<a href="" class="link_look "data-clk="log_off.searchid" >아이디/비밀번호찾기</a>
 				</div>
 			</div>
 		</div>
