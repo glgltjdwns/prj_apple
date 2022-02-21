@@ -12,8 +12,18 @@
 
 
 <body>
+<!--hader -->
+<div class="container-fluid">
+	<div>
+	<input type="image" src="../../../images/shop.png">
+	</div>
 
 
+
+
+
+
+</div>
 
 
 
@@ -26,16 +36,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-1">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">회원관리</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">서비스관리</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            빠른이동
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -45,7 +55,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="#">시스템관리</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -58,10 +68,9 @@
 
 <h2>검색</h2>
 <table>
-
 	<tr>
 		<td>
-			<select class="form-select" aria-label="Default select example">
+			<select class="form-select col-12 mb-2 mb-lg-1" aria-label="Default select example">
 			<option>삭제여부</option>
 			<option>전부삭제</option>
 			</select>
@@ -91,9 +100,18 @@
 			
 		</td>
 		<td>
-		<input type="image" src="../../../images/Search_icon_size48" width="50px">
-		</td>
-		
+			<form action="" method="get" id="form" name="" >
+		 		<input type="image" src="../../../images/Search_icon_size48.png" width="50px">
+			</form>
+				<script type="text/javascript">
+					
+					/* validation */
+					function here(){
+						alert("id: " + document.getElementById("id").value);
+						document.getElementById("form").submit();
+					}
+				</script>
+		</td>                                  
 	</tr>
 
 </table>
@@ -108,11 +126,11 @@
 
 
 <div>
-	<table class="table table-dark table-hover">
+	<table class="table table-hover table-danger table-bordered border-Info ">
 
-		<tr>
+		<tr class="table-active">
 			<th> 
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<input class="form-check-input " type="checkbox" value="" id="flexCheckDefault" >
 			</th>		
 			<th>No</th>
 			<th>회원이름</th>
@@ -202,7 +220,14 @@
     </li>
   </ul>
 </nav>
-	 
+<div class="container">
+	<div class="row">   
+		<div class="col align-self-center">
+			<p>(주)쇼팡 | 대표 최모떙 | 사업자등록번호 288-74-99521 | 주소 인천광역시 남동구 백범로 58번길 13 202호</p>
+			<br><p>Copyright 2014 쇼팡 Inc all rights reserved</p>
+		</div>
+ 	</div>
+</div> 
 
 	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </body>
