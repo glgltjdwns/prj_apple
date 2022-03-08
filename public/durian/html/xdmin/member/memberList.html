@@ -117,41 +117,57 @@
 	      </li>
 	    </ul>
 	    </div>
-	  
-    
-
 <main class="col-md-5 ms-sm-auto col-lg  px-md-4 ">
 <div class="chartjs-size-monitor">
 <div class="chartjs-size-monitor-expand">
 <div class=""></div></div>
 <div class="chartjs-size-monitor-shrink"><div class=""></div></div></div> 
-<div> 
-		<form>
-			<fieldset>
-				<ul>
-					<li>
-						<select class="form-select" aria-label="Default select example">
-						  <option selected>Open this select menu</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-					</li>
-				</ul>
+<div class="container-fluid">
+	<div class="row"> 
+		<div class="col-3 sm-6">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>Open this select menu</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>
 			
-				<ul>
-					<li>
-						<select class="form-select" aria-label="Default select example">
-						  <option selected>Open this select menu</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3 ">Three</option>
-						</select>
-					</li>
-				</ul>
-			</fieldset>	
-		</form>
-</div>
+		</div>
+		<div class="col-3 sm-6">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>Open this select menu</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>
+		</div>
+		<div class="col-3 sm-6">
+			<input type="text" id="search" class="form-control" aria-describedby="search" placeholder="시작일">
+		</div>
+		
+		<div class="col-3 sm-6">
+			<input type="text" id="search2" class="form-control" aria-describedby="search2" placeholder="종료일">
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-4 sm-5">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>Open this select menu</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>	  
+		</div>
+		<div class="col-4 sm-5">
+			<input type="text" id="search3" class="form-control" aria-describedby="search3" placeholder="검색어">
+		</div>
+		<div class="col-4 sm-2">
+			<button type="button" class="btn btn-outline-dark">검색</button>
+			<button type="button" class="btn btn-outline-danger">초기화</button>		
+		</div>
+	</div>
+</div>	
 <h5>Total:12,365</h5>
 	<table class="table table-hover table-danger table-bordered border-Info table-md ">
 
@@ -225,7 +241,7 @@
 </div>
 <hr>
 </div>	
-	<nav aria-label="Page navigation example">
+<nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
